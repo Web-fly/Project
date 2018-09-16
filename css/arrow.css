@@ -1,0 +1,23 @@
+.rectangle {
+	float: left;
+	position: relative;
+	height: 80px;
+	width: 240px;
+	border: solid 1px #ccc;
+	border-right: none;
+	background: #eee linear-gradient(#ed1c24, #ed1c24 37%, #af001a 57%, #af001a);
+	cursor: pointer;
+	z-index: 99;
+}
+.rectangle:after {
+	position: absolute;
+	top: 16px; right: -25px;
+	width: 48px;
+	height: 47px;
+	border-left: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+	transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+	background: #eee linear-gradient(45deg, #ed1c24, #ed1c24 37%, #af001a 57%, #af001a);
+	content: '';
+	z-index: 0;
+}
