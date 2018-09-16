@@ -1,0 +1,13 @@
+.arrow:after {
+  height: 100px;
+  width: 100px;
+  display: block;
+  content: '';
+}
+.upArrow:after,
+.downArrow:after {
+  background: linear-gradient(60deg, transparent 63%, #fff 63%), linear-gradient(-60deg, transparent 63%, #fff 63%), linear-gradient(to bottom, #ccc, #000);
+}
+.downArrow:after {
+  transform: rotate(180deg);
+}
